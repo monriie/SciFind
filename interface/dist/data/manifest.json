@@ -1,0 +1,86 @@
+{
+  "documents": 5183,
+  "dimensions": 384,
+  "maxLength": 256,
+  "normalized": true,
+  "model": "all-MiniLM-L6-v2 \u00b7 SciFact MNRL",
+  "epochs": 3,
+  "batchSize": 8,
+  "metrics": {
+    "pretrained": {
+      "nDCG@10": 0.6450816521455774,
+      "MAP@100": 0.6030740834806815,
+      "Recall@100": 0.925
+    },
+    "finetuned": {
+      "nDCG@10": 0.6963760592750087,
+      "MAP@100": 0.64663453768303,
+      "Recall@100": 0.9560000000000001
+    }
+  },
+  "source": "BEIR\u2013SciFact",
+  "license": "CC BY-SA 4.0",
+  "embeddingSha256": "b7bf0e13f9cf06f492ac145693e092d253c3e3826186f1aab11637a01e2f542d",
+  "baseRevision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "variants": {
+    "finetuned": {
+      "model": "scifact-minilm",
+      "embeddings": "embeddings.f32",
+      "label": "Fine-tuned"
+    },
+    "pretrained": {
+      "model": "pretrained-minilm",
+      "embeddings": "embeddings-pretrained.f32",
+      "label": "Pretrained"
+    }
+  },
+  "training": {
+    "seconds": 1351.8901443999493,
+    "metrics": {
+      "train_runtime": 1351.5894,
+      "train_samples_per_second": 2.04,
+      "train_steps_per_second": 0.253,
+      "total_flos": 0.0,
+      "train_loss": 0.05629713746599243,
+      "epoch": 3.0
+    }
+  },
+  "dataAudit": {
+    "corpus_before": 5183,
+    "corpus_after": 5183,
+    "queries_total": 1109,
+    "train_queries": 809,
+    "test_queries": 300,
+    "train_qrels": 919,
+    "test_qrels": 339,
+    "unused_queries": 0,
+    "filtered_records": 0,
+    "normalization": "whitespace only; title + space + abstract",
+    "positive_pairs": 919,
+    "unique_positive_documents": 565
+  },
+  "truncation": {
+    "max_seq_length": 256,
+    "corpus": {
+      "count": 5183,
+      "median_tokens": 316.0,
+      "max_tokens": 1939,
+      "truncated_count": 3681,
+      "truncated_fraction": 0.710206444144318
+    },
+    "train_queries": {
+      "count": 809,
+      "median_tokens": 21.0,
+      "max_tokens": 79,
+      "truncated_count": 0,
+      "truncated_fraction": 0.0
+    },
+    "test_queries": {
+      "count": 300,
+      "median_tokens": 21.0,
+      "max_tokens": 64,
+      "truncated_count": 0,
+      "truncated_fraction": 0.0
+    }
+  }
+}

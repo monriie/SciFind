@@ -14,7 +14,7 @@
 
 # Frontend source and reproducible asset/deployment scripts.
 # Model weights, corpus exports, embeddings, vendor downloads, build tools,
-# dist/, archives and caches are intentionally not tracked.
+# build outputs, archives and caches are ignored except the deployable dist/.
 /interface/*
 !/interface/.gitignore
 !/interface/README.md
@@ -33,6 +33,10 @@
 !/interface/validate_assets.py
 !/interface/verify.html
 !/interface/verify.js
+!/interface/dist/
+/interface/dist/*
+!/interface/dist/**/
+!/interface/dist/**
 
 # Explicit exclusions for local research and editor files.
 /md/
