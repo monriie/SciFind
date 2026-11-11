@@ -1,0 +1,46 @@
+# Source-only repository: new root files are ignored unless allowed below.
+# Ignoring a file does not delete it from the local workspace.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/TKI_SciFact_Laptop.ipynb
+!/colab/
+!/interface/
+
+# Keep only the main Colab research notebook.
+/colab/*
+!/colab/TKI_SciFact.ipynb
+
+# Frontend source and reproducible asset/deployment scripts.
+# Model weights, corpus exports, embeddings, vendor downloads, build tools,
+# dist/, archives and caches are intentionally not tracked.
+/interface/*
+!/interface/.gitignore
+!/interface/README.md
+!/interface/NOTICE.md
+!/interface/index.html
+!/interface/app.js
+!/interface/bootstrap.js
+!/interface/favicon.svg
+!/interface/retrieval.js
+!/interface/search-engine.js
+!/interface/styles.css
+!/interface/styles.input.css
+!/interface/tailwind.config.cjs
+!/interface/prepare_assets.py
+!/interface/package_static.py
+!/interface/validate_assets.py
+!/interface/verify.html
+!/interface/verify.js
+
+# Explicit exclusions for local research and editor files.
+/md/
+/outputs/
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/.venv*/
+**/.env
+**/.env.*
+**/*.pyc
+**/*.log
