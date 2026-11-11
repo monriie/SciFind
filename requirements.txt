@@ -1,0 +1,12 @@
+torch>=2.6,<3.0
+sentence-transformers==5.1.2
+transformers==4.57.1
+datasets==4.3.0
+accelerate==1.11.0
+huggingface-hub>=0.34.0,<1.0
+numpy
+pandas
+matplotlib
+nbformat
+ipykernel
+jupyterlab
