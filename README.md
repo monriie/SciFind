@@ -64,14 +64,6 @@ python -m http.server 8765 --bind 127.0.0.1 --directory interface
 
 Buka `http://localhost:8765`. Python hanya menyajikan file statis; pencarian diproses di browser. Jangan membuka `index.html` melalui `file://`.
 
-Untuk deploy:
-
-```powershell
-python interface/package_static.py
-```
-
-Unggah isi `interface/dist/` ke hosting statis yang mendukung ukuran file model sekitar 91 MB per model. Rincian, lisensi, dan pemeriksaan browser tersedia pada [README interface](interface/README.md).
-
 ## Hasil eksperimen laptop
 
 | Model | nDCG@10 | MAP@100 | Recall@100 |
