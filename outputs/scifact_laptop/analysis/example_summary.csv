@@ -1,0 +1,4 @@
+category,query_id,query,nDCG_before,nDCG_after,delta_nDCG
+Peningkatan terbesar,1175,The PPR MDA5 has two N-terminal CARD domains.,0.0,1.0,1.0
+Penurunan terbesar,133,"Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyrosine kinase Src.",0.639945385422766,0.1208113026994942,-0.5191340827232718
+Skor tetap,1012,Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.,1.0,1.0,0.0

@@ -1,0 +1,4 @@
+metric,Membaik,Tetap,Menurun
+nDCG@10,63,208,29
+MAP@100,84,183,33
+Recall@100,10,289,1
